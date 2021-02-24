@@ -1,11 +1,2 @@
-* {
-    box-sizing: border-box;
-    font-family: Raleway;
-}
-body {
-    background-color: greenyellow;
-}
-h1 {
-    text-align: center;
-    color: deeppink;
-}
+@import url("style.css");
+@import url("mod.image-gallery.css")
