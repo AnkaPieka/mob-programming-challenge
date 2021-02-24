@@ -15,7 +15,7 @@ const users = [{name: "", email: "", favoriteLangage: ""}]
 const images = ["/img/image-1.jpg", "/img/image-2.jpg", "/img/image-3.jpg"]
 
 app.get("/", (request, response) => {
-    response.render("home", images);
+    response.render("home", {images});
 });
 
 app.get("/my-dev-squad", (request, response) => {
