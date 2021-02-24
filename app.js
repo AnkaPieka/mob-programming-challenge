@@ -14,6 +14,18 @@ const users = [{name: "", email: "", favoriteLangage: ""}]
 
 const images = ["/img/image-1.jpg", "/img/image-2.jpg", "/img/image-3.jpg"]
 
+app.get("/", (request, response) => {
+    response.render("home", images);
+});
+
+app.get("/my-dev-squad", (request, response) => {
+    response.render("allUsers", users);
+});
+
+app.get("/add-new-ironhacker", (request, response) => {
+    response.render("formUser");
+});
+
 app.listen(process.env.PORT, () => {
     console.log("Ready @ http://localhost:" + process.env.PORT)
 })
