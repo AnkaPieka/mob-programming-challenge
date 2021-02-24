@@ -4,7 +4,9 @@
   "description": "## Hey Hackers, let's GIT together !",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js -e .js, .hbs"
+  
   },
   "repository": {
     "type": "git",
